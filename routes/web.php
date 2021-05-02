@@ -20,7 +20,10 @@ Route::get('post/{id}', [
     'uses' => 'PostController@getPost',
     'as' => 'blog.post'
 ]);
-
+Route :: get (' delete /{ id}', [
+    'uses ' => ' PostController@getAdminDelete ',
+    'as ' => 'admin . delete '
+    ]);
 Route::get('about', function () {
     return view('other.about');
 })->name('other.about');
